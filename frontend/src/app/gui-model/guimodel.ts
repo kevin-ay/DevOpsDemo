@@ -58,7 +58,7 @@ export class GuiModel {
                     "url": "/todo",
                     "formFieldList": [
                         {
-                            "id":   "title",
+                            "id": "title",
                             "type": "text",
                             "name": { default: "Titel" },
                             "required": true,
@@ -117,12 +117,12 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": { default: "Neues ToDo"},
+                            "name": { default: "Neues ToDo" },
                             "icon": "fa-user",
                             "color": "green",
                             "width": 2,
-                            "form" : {
-                                "form" : "ToDoForm"
+                            "form": {
+                                "form": "ToDoForm"
                             }
                         },
                         {
@@ -135,7 +135,23 @@ export class GuiModel {
                             "form": {
                                 "form": "ToDoForm"
                             }
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "random Button" },
+                            "icon": "fa-file-alt",
+                            "color": "red",
+                            "width": 4,
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "Kevins Button" },
+                            "icon": "fa-file-alt",
+                            "color": "blue",
+                            "page": "modulePage",
+                            "width": 2,
                         }
+
                     ]
                 },
             ]
